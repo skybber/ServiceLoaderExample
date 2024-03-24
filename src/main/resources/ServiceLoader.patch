@@ -1,7 +1,7 @@
+@Transform(onStart)
 class java.util.ServiceLoader {
-    newLookupIterator() {
-        insertBefore {
+    $method(newLookupIterator())
+        .insertBefore {
             System.out.println("Hello from patcher!");
         }
-    }
 }
